@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signIn.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="logo">
+                <img class="logo_img" src="https://mindx.edu.vn/images/logo.png" alt="mindx">
+            </div>
+            <div class="user_para">
+                <div style="margin-bottom: 15px; font-size: 25px;">Sign in</div>
+                <div>to continue to Youtube</div>
+            </div>
+            <div class="user_email">
+                <input id="user-email" type="text" placeholder="Email or Phone Number">
+                <span id="forgot_email">Forgot Email?</span>
+            </div>
+
+
+            <div class="guest_mode">
+                <span>Not your computer? Use Guest mode to sign in privately.</span>
+                <a id="guest_mode_detail" href="" style="text-decoration-line: none;"> Learn more</a>
+            </div>
+            <div class="submit">
+                <a id="signUp" href="./signUp.html" style="text-decoration-line: none;">Create Acount</a>
+                    <button class="submit_btn" id="btn">Next</button>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="region">United State</div>
+            <div class="more">
+                <a class="more-item" href=""style="text-decoration-line: none;">Help</a>
+                <a class="more-item" href=""style="text-decoration-line: none;">Privacy</a>
+                <a class="more-item" href=""style="text-decoration-line: none;">Terms</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./signInEmail.js"></script>
+    <script src="./signInPass.js"></script>
+</body>
+</html>

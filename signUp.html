@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signUp.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="logo">
+                <img class="logo_img"
+                    src="https://mindx.edu.vn/images/logo.png"
+                    alt="mindx">
+            </div>
+            <div class="user_para">
+                <div style="margin-bottom: 15px; font-size: 25px;">Create your account</div>
+                <div>to continue to Youtube</div>
+            </div>
+            <div class="user-name">
+                <input id="user-firstname" type="text" placeholder="First Name">
+                <input id="user-lastname" type="text" placeholder="Last Name">
+            </div>
+            <div class="user-email" style="width: 80%; margin-top: 30px;">
+                <input id="user-email" type="text" placeholder="Your email address" style="width: 92%;">
+            </div>
+
+
+            <div class="alert-email">
+                <span style="font-size: 12px; color: #091025;">You'll need to confirm that this email belongs to
+                    you.</span>
+            </div>
+            <div class="password">
+                <input id="user-pass" type="password" placeholder="Password">
+                <input id="user-cfpass" type="password" placeholder="Confirm">
+            </div>
+
+            <div class="submit">
+                <a id="signUp" href="./signInEmail.html" style="text-decoration-line: none;">Sign in instead</a>
+                <button id="btn" class="submit_btn">Create</button>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="region">United State</div>
+            <div class="more">
+                <a class="more-item" href="" style="text-decoration-line: none;">Help</a>
+                <a class="more-item" href="" style="text-decoration-line: none;">Privacy</a>
+                <a class="more-item" href="" style="text-decoration-line: none;">Terms</a>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCyt0dwM_Sm6oBNgXLwP8oNe2Uk1FDqXx4",
+            authDomain: "ci68-project.firebaseapp.com",
+            projectId: "ci68-project",
+            storageBucket: "ci68-project.appspot.com",
+            messagingSenderId: "859375462600",
+            appId: "1:859375462600:web:3b40aa15d975280da25dfd",
+            measurementId: "G-1FNEE33CV8"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <script src="./signUp.js"></script>
+
+</body>
+
+</html>
